@@ -1,7 +1,22 @@
 import React from 'react'
+import CssBaseline from '@material-ui/core/CssBaseline'
+import Container from '@material-ui/core/Container'
+
+import { Header } from './components/Header'
+import { Pomodoro } from './components/Pomodoro'
 
 function App() {
-  return <h1>Pomo Timer</h1>
+  return (
+    <>
+      <CssBaseline />
+      <Header />
+      <main>
+        <Container>
+          <Pomodoro />
+        </Container>
+      </main>
+    </>
+  )
 }
 
 export default App
